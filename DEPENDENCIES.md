@@ -171,12 +171,16 @@ These are packages directly imported by `src/` and `vendor/`. Version columns:
 ## Packages NOT on npm (need stubs or skip)
 
 ### Anthropic-internal (`@ant/*`)
-These won't install from npm. Need local stubs or feature-flag them out:
-- `@ant/claude-for-chrome-mcp`
-- `@ant/computer-use-input`
-- `@ant/computer-use-mcp`
-- `@ant/computer-use-swift`
-- `@anthropic-ai/claude-agent-sdk` (not published on npm)
+These won't install from npm. **Already feature-flagged in source** — no action needed at runtime.
+
+All `@ant/*` imports are gated behind `feature('CHICAGO_MCP')` or similar `bun:bundle` flags. In external builds, `feature()` returns `false`, so these code paths are dead-code-eliminated. The only remaining references are TypeScript `type` imports, which need empty type-declaration stubs to satisfy `tsc`.
+
+**Action: Create empty `.d.ts` stubs** (no real code, just type declarations):
+- `@ant/claude-for-chrome-mcp` — types used in `src/utils/claudeInChrome/mcpServer.ts`
+- `@ant/computer-use-input` — types used in `src/utils/computerUse/inputLoader.ts`
+- `@ant/computer-use-mcp` — types used in `src/utils/computerUse/gates.ts`
+- `@ant/computer-use-swift` — types used in `src/utils/computerUse/swiftLoader.ts`
+- `@anthropic-ai/claude-agent-sdk` — types used in `src/cli/print.ts`, `src/services/mcp/client.ts`
 
 ### Native addons (platform-specific binaries)
 These are native Node.js addons compiled for the original build. Need stubs:
