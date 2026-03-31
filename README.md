@@ -122,4 +122,14 @@ src/
 
 All code in this repository is the intellectual property of [Anthropic](https://www.anthropic.com/). This repository is provided for **educational and reference purposes only**. Please refer to Anthropic's [license terms](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.1.88) for usage restrictions.
 
+## Star History
+
+<a href="https://www.star-history.com/?repos=chatgptprojects%2Fclaude-code&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=chatgptprojects/claude-code&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=chatgptprojects/claude-code&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=chatgptprojects/claude-code&type=date&legend=top-left" />
+ </picture>
+</a>
+
 This is **not** affiliated with, endorsed by, or supported by Anthropic.
