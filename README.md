@@ -1,4 +1,9 @@
+
 # Claude Code (Unofficial Source Extraction)
+
+Follow me at https://x.com/paidev
+
+
 
 > **This is NOT an official Anthropic repository.**
 
