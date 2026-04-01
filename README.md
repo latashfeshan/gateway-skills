@@ -245,16 +245,16 @@ Beyond the tools listed above, there's a growing ecosystem of open-source projec
 
 ## Comparison Table
 
-| Tool | Type | Interface | Self-Hosted | MCP Support | Local Models | License |
-|------|------|-----------|-------------|-------------|--------------|---------|
-| **Cline** | Agent | VS Code Extension | N/A | Yes | Yes | Apache 2.0 |
-| **OpenCode** | Assistant | Terminal (TUI) | Yes | Yes | Yes | MIT |
-| **OpenHands** | Platform | Web UI + CLI | Yes | Yes | Yes | MIT |
-| **Aider** | Assistant | Terminal (CLI) | N/A | No | Yes | Apache 2.0 |
-| **Continue** | Assistant | VS Code / JetBrains | Yes | No | Yes | Apache 2.0 |
-| **Tabby** | Completion | VS Code / JetBrains / Vim | Yes | No | Yes | Apache 2.0 |
-| **Void** | Editor | Standalone (VS Code fork) | Yes | No | Yes | Apache 2.0 |
-| **Goose** | Agent | Terminal (CLI) | N/A | Yes | Yes | Apache 2.0 |
+| Tool | Type | Interface | Self-Hosted | MCP Support | Local Models | Built With | License |
+|------|------|-----------|-------------|-------------|--------------|------------|---------|
+| **Cline** | Agent | VS Code Extension | N/A | Yes | Yes | TypeScript | Apache 2.0 |
+| **OpenCode** | Assistant | Terminal (TUI) | Yes | Yes | Yes | Go | MIT |
+| **OpenHands** | Platform | Web UI + CLI | Yes | Yes | Yes | Python | MIT |
+| **Aider** | Assistant | Terminal (CLI) | N/A | No | Yes | Python | Apache 2.0 |
+| **Continue** | Assistant | VS Code / JetBrains | Yes | No | Yes | TypeScript | Apache 2.0 |
+| **Tabby** | Completion | VS Code / JetBrains / Vim | Yes | No | Yes | Rust | Apache 2.0 |
+| **Void** | Editor | Standalone (VS Code fork) | Yes | No | Yes | TypeScript | Apache 2.0 |
+| **Goose** | Agent | Terminal (CLI) | N/A | Yes | Yes | Rust | Apache 2.0 |
 
 ---
 
@@ -276,6 +276,9 @@ If your primary need is fast, inline code completion (tab autocomplete) and you 
 
 ### You want a full AI-powered editor → **Void** or **Zed**
 If you want the AI baked directly into your editor (like Cursor does), Void and Zed are worth exploring. Void gives you a Cursor-like experience in an open-source package. Zed gives you blazing performance with AI features built in natively.
+
+### You want a corporate-backed agent → **Goose**
+If long-term maintenance and stability matters to you, Goose is backed by Block (formerly Square) with dedicated engineering resources. It has strong MCP support and extensible toolkit architecture that can connect to your existing tools.
 
 ### You want enterprise/team features → **OpenHands**, **Tabby**, or **Continue**
 For enterprise deployments, you want tools with admin dashboards, usage monitoring, centralized configuration, and robust self-hosting support. OpenHands, Tabby, and Continue all offer enterprise-grade features.
@@ -324,7 +327,7 @@ One of the biggest advantages of open-source AI coding tools is the ability to s
 
 ### Recommended Self-Hosting Stack:
 1. **Local inference:** [Ollama](https://ollama.com/) or [vLLM](https://github.com/vllm-project/vllm) for running models locally
-2. **Models:** DeepSeek Coder V2, Qwen 2.5 Coder, CodeLlama, or StarCoder2 for code-specific tasks
+2. **Models:** Qwen 2.5 Coder, DeepSeek Coder V3, Codestral, or StarCoder2 for code-specific tasks
 3. **Code assistant:** Any of the tools listed above configured to use your local inference server
 4. **Hardware:** NVIDIA RTX 4090 or better for the best experience, Apple Silicon M-series for portable development
 
