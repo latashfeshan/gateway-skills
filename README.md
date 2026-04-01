@@ -42,6 +42,29 @@ The AI coding assistant space is evolving at breakneck speed. New tools launch e
 
 ---
 
+## Quick Start
+
+Want to try one right now? Here are the fastest way to get started with the top tools:
+
+```bash
+# Aider — pip install and go
+pip install aider-chat
+aider
+
+# OpenCode — single binary
+curl -fsSL https://opencode.ai/install | sh
+opencode
+
+# Cline — install from VS Code marketplace
+# Search "Cline" in VS Code extensions
+
+# Goose — install via pipx
+pipx install goose-ai
+goose session start
+```
+
+---
+
 ## Why Open Source Matters for AI Coding
 
 The world of software development is undergoing a seismic transformation. AI-powered coding assistants have gone from novelty to necessity in an incredibly short time. Tools like GitHub Copilot, Cursor, and various proprietary CLI agents have demonstrated that AI can dramatically accelerate development workflows — from writing boilerplate code to debugging complex systems to refactoring entire codebases.
@@ -240,6 +263,8 @@ Beyond the tools listed above, there's a growing ecosystem of open-source projec
 - **[Aide](https://github.com/codestoryai/aide)** (by CodeStory) — An AI-native IDE built on VS Code with deep agentic capabilities.
 - **[PearAI](https://github.com/trypear/pearai-master)** — An open-source AI code editor focused on making AI pair programming accessible and intuitive.
 - **[Melty](https://github.com/meltylabs/melty)** — An AI code editor designed around the concept of "understanding your codebase" to provide more relevant assistance.
+- **[Amp](https://github.com/nichochar/amp)** — Terminal-based AI coding agent with focus on speed and simplicity. Built in Rust for fast startup.
+- **[Codex](https://github.com/openai/codex)** (by OpenAI) — OpenAI's open-source coding agent that run in the terminal. Uses OpenAI models with sandboxed code execution.
 
 ---
 
